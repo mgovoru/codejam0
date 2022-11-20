@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+body {
+	box-sizing: border-box;
+	font-family: "Marck Script", cursive;
+	color: red;
+	font-size: 24px;
+	background-color: rgb(33, 35, 35);
+}
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+}
+.main {
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+[class*="-ibg"] {
+	position: relative;
+}
+[class*="-ibg"] img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+[class*="-ibg_contain"] img {
+	object-fit: contain;
+}
+
+[class*="__container"] {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.main__cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.main__image {
+	width: 100%;
+	height: 100%;
+}
+.main__game {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.game__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+.game__ancients {
+	flex: 1 1 33.33%;
+	text-align: center;
+}
+.game__difficuties {
+	flex: 1 1 33.33%;
+	text-align: center;
+}
+.game__cards {
+	flex: 1 1 33.33%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.game__ancient {
+	flex: 1 1 45%;
+	align-self: center;
+	min-height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 4px double red;
+}
+/* .game__ancient:hover {
+	outline: 3px solid red;
+	border: 4px solid red;
+	transform: scale(2);
+} */
+.game__difficuties {
+	align-self: center;
+}
+.game__buttons {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
+}
+.button {
+	font-family: "Marck Script", cursive;
+	font-size: 20px;
+	color: red;
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+	min-height: 35px;
+	border: 4px double red;
+	outline: 3px solid transparent;
+}
+._active,
+._active-button,
+._active-cards-button,
+._active-desk {
+	outline: 3px solid red;
+	border: 4px solid red;
+}
+.game__circles {
+	align-self: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 24px;
+	max-width: 200px;
+	opacity: 0;
+}
+.circle {
+	align-self: center;
+	flex: 0 0 40px;
+}
+.circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	border: 4px double red;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+}
+.circle:not(:last-child) {
+	margin-bottom: 8px;
+}
+[class*="-green"] {
+	background-color: green;
+}
+[class*="-blue"] {
+	background-color: blue;
+}
+[class*="-brown"] {
+	background-color: brown;
+}
+.game__shuffle {
+	display: flex;
+	gap: 16px;
+	padding: 16px;
+}
+.game__deck {
+	flex: 0 0 47%;
+	min-height: 300px;
+	border: 4px double red;
+}
+.stage {
+	display: flex;
+	gap: 16px;
+}

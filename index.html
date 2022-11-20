@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>codejam</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+		</header>
+		<main class="main">
+			<div class="main__cover">
+				<div class="main__image -ibg">
+					<img class="main__img" src="assets/home.png" alt="картинка">
+				</div>
+			</div>
+			<div class="main__container">
+				<div class="main__game game">
+					<div class="game__ancients">
+						<h2 class="game-title">древние</h2>
+						<div class="game__items">
+							<div class="game__ancient"></div>
+							<div class="game__ancient"></div>
+							<div class="game__ancient"></div>
+							<div class="game__ancient"></div>
+						</div>
+					</div>
+					<div class="game__difficuties">
+						<h2 class="game-title">уровень сложности</h2>
+						<div class="game__buttons">
+							<button class="game__button button">легкий</button>
+							<button class="game__button button">средний</button>
+							<button class="game__cards-button button">замешать колоду</button>
+						</div>
+					</div>
+					<div class="game__cards">
+						<h2 class="game__title">карты</h2>
+						<h3 class="game__sub-title">схема древнего</h3>
+						<div class="game__circles">
+							<div class="game__first-stage stage">
+								<div class="game__circle-green circle"></div>
+								<div class="game__circle-brown circle"></div>
+								<div class="game__circle-blue circle"></div>
+							</div>
+							<div class="game__second-stage stage">
+								<div class="game__circle-green circle"></div>
+								<div class="game__circle-brown circle"></div>
+								<div class="game__circle-blue circle"></div>
+							</div>
+							<div class="game__third-stage stage">
+								<div class="game__circle-green circle"></div>
+								<div class="game__circle-brown circle"></div>
+								<div class="game__circle-blue circle"></div>
+							</div>
+						</div>
+						<div class="game__shuffle">
+							<div class="game__deck -ibg "><img src="assets/mythicCardBackground.png" alt="картинка"
+									class="desk-shuffle">
+							</div>
+							<div class="game__deck -ibg"> <img class="game__card" src="#" alt="картинка"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<footer>
+		</footer>
+
+		<script src="index.js" type="module"></script>
+		<script src="data/mythicCards/blue/index.js" type="module"></script>
+		<script src="data/mythicCards/brown/index.js" type="module"></script>
+		<script src="data/mythicCards/green/index.js" type="module"></script>
+		<script src="data/ancients.js" type="module"></script>
+	</div>
+</body>
+
+</html>
